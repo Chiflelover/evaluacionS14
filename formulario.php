@@ -4,12 +4,11 @@ $mostrarExito = false;
 $nombre = $correo = $mensaje = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener datos del formulario
+
     $nombre = $_POST["nombre"] ?? '';
     $correo = $_POST["correo"] ?? '';
     $mensaje = $_POST["mensaje"] ?? '';
     
-    // Validar campos
     if (empty($nombre)) {
         $errores[] = "Por favor ingresa un nombre.";
     }
@@ -23,7 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errores[] = "Por favor ingresa el mensaje.";
     }
     
-    // Si no hay errores, mostrar éxito
     if (empty($errores)) {
         $mostrarExito = true;
     }
