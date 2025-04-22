@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #FF9800;
+    outline: none;
+}
+
+.campo textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* ESTILOS ACTUALIZADOS PARA EL BOTÓN */
+button {
+    background-color: #d88200;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: right;
+    width: auto;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #F57C00;
+}
+
+form::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mensaje-exito {
+    color: #fcfcfc;
+    background-color: #00740a;
+    text-align: center;
+    padding: 12px;
+    margin: -10px 0 15px 0;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    top: -5px;
+}
+
+.errores {
+    color: #C62828;
+    background-color: #FFEBEE;
+    border: 2px solid #FFCDD2;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.errores div {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.errores div:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+.errores div:last-child {
+    margin-bottom: 0;
+}
